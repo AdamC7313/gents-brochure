@@ -1,5 +1,3 @@
-const key = 'AIzaSyBI2xkJycnZvRDGISCagBucqMhpxcz7fNs'
-
 const handleClick = () => {
   window.open('https://www.schedulicity.com/scheduling/GCC3X8', '_blank')
 }
