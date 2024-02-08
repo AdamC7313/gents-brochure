@@ -52,7 +52,7 @@ const handleScroll = () => {
 }
 }
 
-$(window).resize(function() {
+
   if($(window).width() > 1500) {
     $('.map').height(500)
     $('.mobile-service-name').addClass('hidden')
@@ -65,5 +65,4 @@ $(window).resize(function() {
     $('.service-name').removeClass('hidden')
     $('.mobile-service-name').addClass('hidden')
  }
-});
 window.addEventListener("scroll", handleScroll)
