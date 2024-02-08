@@ -613,6 +613,9 @@ gmp-map {
   .contact-info {
     padding: 0px;
   }
+  .contact {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 850px) {
