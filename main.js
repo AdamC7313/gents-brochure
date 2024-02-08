@@ -59,7 +59,7 @@ const handleScroll = () => {
     $('.service-name').addClass('hidden')
     $('.mobile-service-name').removeClass('hidden')
   }
- else {
+ if ($(window).width() > 480) {
     $('.service-name').removeClass('hidden')
     $('.mobile-service-name').addClass('hidden')
  }
