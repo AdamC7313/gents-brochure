@@ -452,6 +452,9 @@ h2 {
   scroll-margin-top: 100px;
   padding: 1px 75px;
   background-color: #333328;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-container {
@@ -544,6 +547,13 @@ gmp-map {
   transition: all 0.5s ease;
   margin-left: auto;
   margin-right: auto;
+}
+
+.mobile-hero {
+  width: 100vw;
+  position: absolute;
+  top: 100px;
+  display: none;
 }
 
 /* Media Queries */
@@ -700,7 +710,10 @@ gmp-map {
 
 @media (max-width: 530px) {
   .hero {
-    background-image: none;
+    background-size: 100vw;
+  }
+  .logo {
+    display: none;
   }
 }
 
