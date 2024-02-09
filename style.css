@@ -16,6 +16,7 @@ body {
 
 .site {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .scroll-to-top {
