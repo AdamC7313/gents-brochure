@@ -23,7 +23,7 @@ $(function() {
     $('.services')[0].scrollIntoView()
   })
   $('.barbers-nav').on('click', function() {
-    $('.barbers')[0].scrollIntoView()
+    $('.barbers')[0].scrollIntoView(100)
   })
   $('.contact-nav').on('click', function() {
     $('.contact')[0].scrollIntoView()
@@ -39,6 +39,7 @@ const handleScroll = () => {
   if(screen.width > 670) {
   const nav = document.querySelector('.nav')
   const toTop = document.querySelector('.scroll-to-top')
+
   if(window.scrollY > 100) {
     toTop.classList.add('see-to-top')
     nav.classList.add('scrolled')
@@ -46,6 +47,15 @@ const handleScroll = () => {
   if(window.scrollY < 100) {
     nav.classList.remove('scrolled')
     toTop.classList.remove('see-to-top')
+  }
+}
+if(screen.width < 670) {
+  const scrollForMore = document.querySelector('.scroll-for-more')
+  if(window.scrollY > 100) {
+    scrollForMore.classList.add('scrolled-scroll-for-more')
+  }
+  if(window.scrollY < 100) {
+    scrollForMore.classList.remove('scrolled-scroll-for-more')
   }
 }
 }
