@@ -453,7 +453,7 @@ h2 {
 .contact {
   min-height: calc(100vh - 100px);
   scroll-margin-top: 100px;
-  padding: 1px 75px;
+  padding: 1px 75px 50px 75px;
   background-color: #333328;
   display: flex;
   flex-direction: column;
@@ -464,29 +464,27 @@ h2 {
   min-height: clac(100vh - 225px);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .contact-info {
   font-family: "Lato", sans-serif;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: 50%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 55px 55px 103px 55px 55px;
+  width: 400px;
   justify-content: space-around;
   align-items: center;
-  padding-left: 20px;
+  padding: 0px 20px;
   text-align: center;
 }
 
-.front-shop-desktop {
-  width: 250px;
-  height: 300px;
-  padding-left: 20px;
+.front-shop {
+  width: 300px;
+  height: 350px;
 }
 
 .front-shop-mobile {
-  width: 250px;
-  height: 300px;
   padding-left: 20px;
   display: none;
 }
@@ -506,8 +504,8 @@ a {
 
 .map,
 gmp-map {
-  max-height: 450px;
-  width: 80%;
+  max-height: 350px;
+  width: 350px;
   z-index: 1;
 }
 
@@ -572,6 +570,7 @@ gmp-map {
 }
 
 .scroll-for-more {
+  display: none;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -701,6 +700,10 @@ gmp-map {
 }
 
 @media (max-width: 670px) {
+  .scroll-for-more {
+    display: block;
+  }
+
   .hero-text {
     font-size: 2rem;
   }
