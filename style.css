@@ -451,7 +451,6 @@ h2 {
 }
 
 .contact {
-  min-height: calc(100vh - 100px);
   scroll-margin-top: 100px;
   padding: 1px 75px 50px 75px;
   background-color: #333328;
@@ -461,10 +460,23 @@ h2 {
 }
 
 .contact-container {
-  min-height: clac(100vh - 225px);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact-and-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+.front-mobile-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info {
@@ -485,7 +497,7 @@ h2 {
 }
 
 .front-shop-mobile {
-  padding-left: 20px;
+  padding: 45px 0px;
   display: none;
 }
 
