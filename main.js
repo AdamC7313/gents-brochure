@@ -1,5 +1,5 @@
 const handleClick = () => {
-  window.open('https://www.schedulicity.com/scheduling/GCC3X8', '_blank')
+  window.open('https://www.vagaro.com/gcc3x8', '_blank')
 }
 
 const flipCard = (e) => {
