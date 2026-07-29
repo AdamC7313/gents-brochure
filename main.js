@@ -1,5 +1,5 @@
 const handleClick = () => {
-  window.open('https://www.vagaro.com/gcc3x8', '_blank')
+  window.open('https://book.squareup.com/appointments/chw8brvdmwwm6x/location/3WN26DE0AXNKA/services', '_blank')
 }
 
 const flipCard = (e) => {
